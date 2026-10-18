@@ -6,6 +6,8 @@ De los elefantes de San Diego a la catedral del algoritmo. Doce capítulos para 
 
 El video completo, listo para descargar: [public/film/la-maquina-roja.mp4](public/film/la-maquina-roja.mp4) (15:15, 1280×720).
 
+Título, descripción y hashtags para YouTube: [YOUTUBE.md](YOUTUBE.md).
+
 ## Capítulos
 
 1. Diecinueve segundos — 2005

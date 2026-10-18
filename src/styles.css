@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a0908;
+  --color-paper: #f4efe6;
+  --color-ash: #8c8478;
+  --color-signal: #e11d2e;
+  --color-amber: #d4a054;
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --radius: 0.8rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-sans);
+    background: var(--color-ink);
+    color: var(--color-paper);
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-signal);
+    color: var(--color-paper);
+  }
+}
+
+@keyframes film-drift {
+  from {
+    transform: scale(1.05) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.16) translate3d(-2%, -1.2%, 0);
+  }
+}
+
+@keyframes film-drift-alt {
+  from {
+    transform: scale(1.08) translate3d(-1.5%, 0, 0);
+  }
+  to {
+    transform: scale(1.16) translate3d(1.2%, -1%, 0);
+  }
+}
+
+.film-drift,
+.film-drift-alt {
+  animation-duration: 36s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.film-drift {
+  animation-name: film-drift;
+}
+
+.film-drift-alt {
+  animation-name: film-drift-alt;
+}
+
+.film-paused {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .film-drift,
+  .film-drift-alt {
+    animation: none;
+  }
+}
+
+.scrub {
+  appearance: none;
+  height: 0.3rem;
+  width: 100%;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-paper) 22%, transparent);
+  outline: none;
+}
+
+.scrub::-webkit-slider-thumb {
+  appearance: none;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 999px;
+  background: var(--color-signal);
+  border: 0;
+}
+
+.stage-shadow {
+  box-shadow: 0 24px 80px color-mix(in srgb, var(--color-ink) 55%, transparent);
+}
+
+.stage-vignette {
+  background: radial-gradient(transparent, color-mix(in srgb, var(--color-ink) 45%, transparent));
+}

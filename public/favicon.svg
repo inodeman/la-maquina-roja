@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="La Máquina Roja">
+  <rect width="32" height="32" rx="8" fill="#0A0908"/>
+  <rect x="5" y="5" width="22" height="22" rx="6" fill="#E11D2E"/>
+  <path d="M13 10.4 L21.6 16 L13 21.6 Z" fill="#F4EFE6"/>
+</svg>

@@ -4,6 +4,8 @@ Documental sobre la historia de YouTube. Unos quince minutos, formato horizontal
 
 De los elefantes de San Diego a la catedral del algoritmo. Doce capítulos para ver de un tirón. Al final, la invitación: seguir a [InodeAi](https://www.youtube.com/@InodeAi).
 
+El video completo, listo para descargar: [public/film/la-maquina-roja.mp4](public/film/la-maquina-roja.mp4) (15:15, 1280×720).
+
 ## Capítulos
 
 1. Diecinueve segundos — 2005
